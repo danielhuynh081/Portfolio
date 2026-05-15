@@ -3,6 +3,14 @@
 html,
 body {
   width: 100vw;
-  background-color: black;
+  background-color: white;
   color: white;
+}
+
+@theme {
+  --color-primary: #1a1a1a;
+  --color-accent: #28282b;
+  --color-surface: #f8fafc;
+  --color-border: #e2e8f0;
+  --color-text-muted: #64748b;
 }
