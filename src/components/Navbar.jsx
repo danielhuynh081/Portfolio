@@ -23,7 +23,7 @@ const Navbar = () => {
     <motion.nav
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      className={`fixed top-1 w-full z-50 transition-all duration-100 border-b ${
+      className={`fixed top-0 w-full z-50 transition-all duration-100 border-b ${
         isScrolled
           ? "bg-white/90 backdrop-blur-sm py-4 border-border"
           : "bg-transparent py-6 border-transparent"
