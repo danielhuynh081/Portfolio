@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import ProjectCard from "../components/Projectcard";
 import { desc, title } from "framer-motion/client";
 
-const About = () => {
+const Projects = () => {
   const projects = [
     {
       title: "AI-Powered Resume Optimizer",
@@ -114,7 +114,7 @@ const About = () => {
           >
             {/* Project Cards */}
             <div className="pt-12 border-border">
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-y-10 gap-x-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-y-10 gap-x-8">
                 {projects.map((project) => (
                   <ProjectCard
                     key={project.title}
@@ -134,4 +134,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Projects;
