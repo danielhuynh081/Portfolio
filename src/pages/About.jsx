@@ -158,11 +158,17 @@ const About = () => {
     "TypeScript",
     "Tailwind CSS",
     "Python",
-    "FastAPI",
-    "PostgreSQL",
+    "C",
     "C++",
     "GCP",
     "AWS",
+    "Docker",
+    "FastAPI",
+    "Django",
+    "Express",
+    "PostgreSQL",
+    "MongoDB",
+    "Redis",
   ];
 
   return (
