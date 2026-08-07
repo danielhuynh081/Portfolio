@@ -19,7 +19,7 @@ const ProjectCard = ({
           style={{ objectPosition: imagePosition }}
         />
 
-        <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+        <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100 md:group-hover:opacity-100">
           {github ? (
             <a
               href={github}
@@ -35,6 +35,21 @@ const ProjectCard = ({
               Code available upon request
             </div>
           )}
+        </div>
+
+        {/* Mobile View Source Link */}
+        <div className="absolute bottom-2 right-2 md:hidden">
+            {github && (
+                <a
+                  href={github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-primary shadow-lg backdrop-blur-sm"
+                  aria-label="View Source"
+                >
+                  <Code size={20} />
+                </a>
+            )}
         </div>
       </div>
 

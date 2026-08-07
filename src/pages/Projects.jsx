@@ -101,12 +101,13 @@ const Projects = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
+            className="text-center md:text-left"
           >
-            <h2 className="text-sm font-bold uppercase tracking-widest text-accent mb-4">
+            <h2 className="text-xs md:text-sm font-bold uppercase tracking-widest text-accent mb-4">
               Projects
             </h2>
 
-            <h3 className="text-4xl font-bold text-primary tracking-tight">
+            <h3 className="text-3xl md:text-4xl font-bold text-primary tracking-tight">
               A collection of my personal and PSU projects
             </h3>
           </motion.div>
@@ -129,7 +130,7 @@ const Projects = () => {
             technologies.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-y-10 gap-x-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-8">
             {fullStackProjects.map((project) => (
               <ProjectCard key={project.title} {...project} />
             ))}
@@ -153,7 +154,7 @@ const Projects = () => {
             efficient file processing.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-y-10 gap-x-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-8">
             {systemsProjects.map((project) => (
               <ProjectCard key={project.title} {...project} />
             ))}
@@ -176,7 +177,7 @@ const Projects = () => {
             programming concepts.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-y-10 gap-x-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-8">
             {csProjects.map((project) => (
               <ProjectCard key={project.title} {...project} />
             ))}

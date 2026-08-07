@@ -40,16 +40,16 @@ const Contact = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="md:col-span-5"
+            className="md:col-span-5 text-center md:text-left"
           >
-            <h2 className="text-sm font-bold uppercase tracking-widest text-accent mb-4">
+            <h2 className="text-xs md:text-sm font-bold uppercase tracking-widest text-accent mb-4">
               Contact
             </h2>
             <h3 className="text-4xl md:text-5xl font-bold text-primary tracking-tight leading-tight">
-              Let's make something <br />
+              Let's make something <br className="hidden md:block" />
               great together.
             </h3>
-            <p className="mt-6 text-lg text-slate-600 max-w-sm">
+            <p className="mt-6 text-base md:text-lg text-slate-600 max-w-sm mx-auto md:mx-0">
               I'm always open to discussing new projects, creative ideas or
               opportunities to be part of your visions.
             </p>

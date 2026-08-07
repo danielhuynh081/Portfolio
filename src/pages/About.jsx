@@ -180,13 +180,13 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="md:col-span-4"
+            className="md:col-span-4 text-center md:text-left"
           >
-            <h2 className="mb-4 text-sm font-bold uppercase tracking-widest text-accent">
+            <h2 className="mb-4 text-xs md:text-sm font-bold uppercase tracking-widest text-accent">
               About Me
             </h2>
 
-            <h3 className="text-4xl font-bold tracking-tight text-primary">
+            <h3 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">
               My Skills & Interests
             </h3>
           </motion.div>
@@ -198,14 +198,14 @@ const About = () => {
             viewport={{ once: true }}
             className="md:col-span-8"
           >
-            <p className="mb-8 text-xl leading-relaxed text-slate-600">
+            <p className="mb-8 text-lg md:text-xl leading-relaxed text-slate-600">
               Hi, I&apos;m Daniel. I recently graduated with a degree in
               Computer Science from Portland State University. I enjoy building
               C++ and full-stack applications that solve real-world problems and
               improve the lives of others.
             </p>
 
-            <p className="mb-12 text-lg leading-relaxed text-slate-500">
+            <p className="mb-12 text-base md:text-lg leading-relaxed text-slate-500">
               Since graduating, I&apos;ve been diving deeper into areas of
               software engineering that aren&apos;t always taught in school.
               I&apos;ve been expanding my portfolio, studying for the AWS Cloud
@@ -218,13 +218,13 @@ const About = () => {
                 Technical Stack
               </h4>
 
-              <div className="grid grid-cols-2 gap-x-8 gap-y-4 md:grid-cols-3">
+              <div className="grid grid-cols-2 gap-x-4 gap-y-4 md:grid-cols-3 md:gap-x-8">
                 {skills.map((skill) => (
                   <div
                     key={skill}
-                    className="flex items-center font-medium text-primary"
+                    className="flex items-center text-sm md:text-base font-medium text-primary"
                   >
-                    <span className="mr-3 h-2 w-2 bg-accent" />
+                    <span className="mr-3 h-2 w-2 bg-accent shrink-0" />
                     {skill}
                   </div>
                 ))}
@@ -239,13 +239,13 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="md:col-span-4"
+            className="md:col-span-4 text-center md:text-left"
           >
-            <h2 className="mb-4 text-sm font-bold uppercase tracking-widest text-accent">
+            <h2 className="mb-4 text-xs md:text-sm font-bold uppercase tracking-widest text-accent">
               Hobbies
             </h2>
 
-            <h3 className="text-4xl font-bold tracking-tight text-primary">
+            <h3 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">
               Beyond Programming
             </h3>
           </motion.div>
@@ -257,7 +257,7 @@ const About = () => {
             viewport={{ once: true }}
             className="md:col-span-8"
           >
-            <p className="text-xl leading-relaxed text-slate-600">
+            <p className="text-lg md:text-xl leading-relaxed text-slate-600">
               When I&apos;m not coding, I enjoy exploring nature, lifting
               weights, playing sports, cooking, and trying new things. One of my
               favorite experiences this year was building a backyard patio with
