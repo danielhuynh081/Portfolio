@@ -7,7 +7,8 @@ import BST from "../images/projects/BST.jpg";
 import macsystem from "../images/projects/macsystem.png";
 import pet from "../images/projects/pet.jpg";
 import unix from "../images/projects/unix.jpg";
-
+import aws from "../images/projects/amazon-web-services.jpg";
+import clean from "../images/projects/clean.jpg";
 const Projects = () => {
   const fullStackProjects = [
     {
@@ -89,6 +90,25 @@ const Projects = () => {
       imagePosition: "top",
       github:
         "https://github.com/danielhuynh081/PSU_Projects/tree/main/cs302_DataStructures/Lab2_DLL-Templates-OperatorOverloading",
+    },
+  ];
+
+  const inProgress = [
+    {
+      title: "CleanupPro",
+      description:
+        "A C++ application that helps you manage memory on your device, I found it hard to clear memory when it categorized everything into system data/other so i didnt know what to delete",
+      tags: ["C++", "filesystem"],
+      image: clean,
+      imagePosition: "50% 20%",
+      github:
+        "https://github.com/danielhuynh081/PSU_Projects/tree/main/cs302_DataStructures/Lab2_DLL-Templates-OperatorOverloading",
+    },
+    {
+      title: "AWS Certified Cloud Practitioner Cerficiate",
+      description: "Learning the complexity of AWS",
+      tags: ["AWS", "Certificates"],
+      image: aws,
     },
   ];
 
@@ -179,6 +199,29 @@ const Projects = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-8">
             {csProjects.map((project) => (
+              <ProjectCard key={project.title} {...project} />
+            ))}
+          </div>
+        </motion.div>
+
+        {/* In Progress*/}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          viewport={{ once: true }}
+        >
+          <h3 className="text-3xl mt-20 font-bold text-primary mb-2">
+            In Progress
+          </h3>
+
+          <p className="text-slate-500 mb-10">
+            Projects exploring data structures, algorithms, and object-oriented
+            programming concepts.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-8">
+            {inProgress.map((project) => (
               <ProjectCard key={project.title} {...project} />
             ))}
           </div>
