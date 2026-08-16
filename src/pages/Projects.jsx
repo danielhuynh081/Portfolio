@@ -102,7 +102,7 @@ const Projects = () => {
       image: clean,
       imagePosition: "50% 20%",
       github:
-        "https://github.com/danielhuynh081/PSU_Projects/tree/main/cs302_DataStructures/Lab2_DLL-Templates-OperatorOverloading",
+        "https://github.com/danielhuynh081/CleanupPro",
     },
     {
       title: "AWS Certified Cloud Practitioner Cerficiate",
