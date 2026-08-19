@@ -8,7 +8,8 @@ import macsystem from "../images/projects/macsystem.png";
 import pet from "../images/projects/pet.jpg";
 import unix from "../images/projects/unix.jpg";
 import aws from "../images/projects/amazon-web-services.jpg";
-import clean from "../images/projects/clean.jpg";
+import CleanupPro from "../images/projects/CleanupPro.jpg";
+
 const Projects = () => {
   const fullStackProjects = [
     {
@@ -59,6 +60,15 @@ const Projects = () => {
       github:
         "https://github.com/danielhuynh081/PSU_Projects/tree/main/cs333_OperatingSystems/Lab3_ViktarArchiveFiles",
     },
+    {
+      title: "CleanupPro",
+      description:
+        "A C++ application that helps you manage memory on your device, I found it hard to clear memory when it categorized everything into system data/other so i didnt know what to delete",
+      tags: ["C++", "Filesystem", "Multithreading"],
+      image: CleanupPro,
+      imagePosition: "50% 20%",
+      github: "https://github.com/danielhuynh081/CleanupPro",
+    },
   ];
 
   const csProjects = [
@@ -95,20 +105,17 @@ const Projects = () => {
 
   const inProgress = [
     {
-      title: "CleanupPro",
-      description:
-        "A C++ application that helps you manage memory on your device, I found it hard to clear memory when it categorized everything into system data/other so i didnt know what to delete",
-      tags: ["C++", "filesystem"],
-      image: clean,
-      imagePosition: "50% 20%",
-      github:
-        "https://github.com/danielhuynh081/CleanupPro",
-    },
-    {
       title: "AWS Certified Cloud Practitioner Cerficiate",
       description: "Learning the complexity of AWS",
       tags: ["AWS", "Certificates"],
       image: aws,
+    },
+    {
+      title: "Duo Programming IDE",
+      description:
+        "A duo programming IDE that allows two developers to work on the same codebase simultaneously, with real-time collaboration and communication features.",
+      tags: ["React", "Node.js", "WebRTC", "Socket.io"],
+      image: "https://placehold.co/800x500?text=Coming+Soon",
     },
   ];
 
