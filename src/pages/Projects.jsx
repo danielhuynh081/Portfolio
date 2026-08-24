@@ -105,12 +105,6 @@ const Projects = () => {
 
   const inProgress = [
     {
-      title: "AWS Certified Cloud Practitioner Cerficiate",
-      description: "Learning the complexity of AWS",
-      tags: ["AWS", "Certificates"],
-      image: aws,
-    },
-    {
       title: "Duo Programming IDE",
       description:
         "A duo programming IDE that allows two developers to work on the same codebase simultaneously, with real-time collaboration and communication features.",
