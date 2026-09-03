@@ -111,6 +111,13 @@ const Projects = () => {
       tags: ["React", "Node.js", "WebRTC", "Socket.io"],
       image: "https://placehold.co/800x500?text=Coming+Soon",
     },
+    {
+      title: "LSM Key Value Storage",
+      description:
+        "a project that stores keyvalues using an LSM developed in C++",
+      tags: ["C++"],
+      image: "https://placehold.co/800x500?text=Coming+Soon",
+    },
   ];
 
   return (
