@@ -152,6 +152,53 @@ const ImageSlider = () => {
   );
 };
 
+const experience = [
+  {
+    role: "Desktop Support Technician",
+    company: "Analog Devices",
+    type: "Full time · Contract",
+    dates: "Sep 2026 - Present",
+    location: "Camas, WA · On-site",
+    points: [
+      "Provide desktop and hardware support for on-site staff, resolving technical issues across systems and equipment.",
+    ],
+  },
+  {
+    role: "Back End Developer Intern",
+    company: "Vosyn",
+    type: "Part-time · Remote",
+    dates: "Jun 2025 - Oct 2025",
+    location: "Toronto, ON, Canada",
+    points: [
+      "Developed FastAPI endpoints, webhooks, and Supabase database integrations to support production application functionality.",
+      "Collaborated in Agile sprints, daily stand-ups, code reviews, and retrospectives with cross-functional teams.",
+      "Implemented backend and AI-powered functionality using Python, JavaScript, and LLM APIs.",
+    ],
+  },
+  {
+    role: "Technical Course Support Specialist (TCSS)",
+    company: "Portland State University",
+    type: "Part-time",
+    dates: "Mar 2024 - Sep 2025",
+    location: "Portland, OR",
+    points: [
+      "Proctored coding proficiency demos for lower-division computer science courses.",
+      "Helped students navigate Linux tools and debuggers like Vim and GDB, and assisted in debugging and understanding C++ and Python.",
+    ],
+  },
+  {
+    role: "IT Support, Computer Action Team",
+    company: "Portland State University",
+    type: "Part-time · On-site",
+    dates: "Sep 2024 - Jun 2025",
+    location: "Portland, OR",
+    points: [
+      "Troubleshot hardware, software, printer, and network issues across campus systems, assisting students, faculty, and staff through ticket-based support.",
+      "Managed support tickets and collaborated with a team of five to resolve requests efficiently while delivering timely customer service.",
+    ],
+  },
+];
+
 const About = () => {
   const skills = [
     "React / Next.js",
@@ -207,10 +254,11 @@ const About = () => {
 
             <p className="mb-12 text-base md:text-lg leading-relaxed text-slate-500">
               Since graduating, I&apos;ve been diving deeper into areas of
-              software engineering that aren&apos;t always taught in school.
-              I&apos;ve been expanding my portfolio, studying for the AWS Cloud
-              Practitioner certification, and learning Blender to create unique,
-              interactive websites.
+              software engineering that aren&apos;t always taught in school,
+              Such as cloud computing, CI/CD, and backend architecture.
+              I&apos;ve also been expanding my portfolio, studying for the AWS
+              Cloud Practitioner certification, and sharpening my C++ skills by
+              creatng more complex projects.
             </p>
 
             <div className="border-t border-border py-12">
@@ -231,9 +279,61 @@ const About = () => {
               </div>
             </div>
           </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="md:col-span-4 text-center md:text-left"
+          >
+            <h3 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">
+              Experience
+            </h3>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="md:col-span-8"
+          >
+            <div className="divide-y divide-border border-t border-border">
+              {experience.map((job) => (
+                <div key={`${job.company}-${job.role}`} className="py-8">
+                  <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                    <h4 className="text-lg md:text-xl font-bold text-primary">
+                      {job.role}
+                    </h4>
+                    <span className="text-sm font-medium text-slate-400">
+                      {job.dates}
+                    </span>
+                  </div>
+
+                  <p className="mt-1 text-sm md:text-base font-medium text-accent">
+                    {job.company} &middot; {job.type}
+                  </p>
+
+                  <p className="mt-1 text-sm text-slate-400">{job.location}</p>
+
+                  <ul className="mt-4 space-y-2">
+                    {job.points.map((point) => (
+                      <li
+                        key={point}
+                        className="flex text-sm md:text-base leading-relaxed text-slate-600"
+                      >
+                        <span className="mr-3 mt-2 h-1.5 w-1.5 shrink-0 bg-accent" />
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </motion.div>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 items-start gap-12 border-t border-border pt-20 md:grid-cols-12">
+        {/* <div className="mt-12 grid grid-cols-1 items-start gap-12 border-t border-border pt-20 md:grid-cols-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -268,7 +368,7 @@ const About = () => {
 
             <ImageSlider />
           </motion.div>
-        </div>
+        </div>*/}
       </div>
     </section>
   );

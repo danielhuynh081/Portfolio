@@ -63,7 +63,7 @@ const Projects = () => {
     {
       title: "CleanupPro",
       description:
-        "A C++ application that helps you manage memory on your device, I found it hard to clear memory when it categorized everything into system data/other so i didnt know what to delete",
+        "A C++ application that helps you manage memory on your device, I found it hard to clear memory when it categorized everything into system data/other so i created an applicaiton that made it easier to see where memory was being used, and created functions to clear memory from common paths that are safe to clear",
       tags: ["C++", "Filesystem", "Multithreading"],
       image: CleanupPro,
       imagePosition: "50% 20%",
@@ -104,13 +104,6 @@ const Projects = () => {
   ];
 
   const inProgress = [
-    {
-      title: "Duo Programming IDE",
-      description:
-        "A duo programming IDE that allows two developers to work on the same codebase simultaneously, with real-time collaboration and communication features.",
-      tags: ["React", "Node.js", "WebRTC", "Socket.io"],
-      image: "https://placehold.co/800x500?text=Coming+Soon",
-    },
     {
       title: "LSM Key Value Storage",
       description:
