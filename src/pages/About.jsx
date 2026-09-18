@@ -233,7 +233,7 @@ const About = () => {
               About Me
             </h2>
 
-            <h3 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">
+            <h3 className="text-[clamp(1.75rem,1.5vw+1.25rem,2.25rem)] font-bold tracking-tight text-primary">
               My Skills & Interests
             </h3>
           </motion.div>
@@ -287,7 +287,7 @@ const About = () => {
             viewport={{ once: true }}
             className="md:col-span-4 text-center md:text-left"
           >
-            <h3 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">
+            <h3 className="text-[clamp(1.75rem,1.5vw+1.25rem,2.25rem)] font-bold tracking-tight text-primary">
               Experience
             </h3>
           </motion.div>
@@ -345,7 +345,7 @@ const About = () => {
               Hobbies
             </h2>
 
-            <h3 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">
+            <h3 className="text-[clamp(1.75rem,1.5vw+1.25rem,2.25rem)] font-bold tracking-tight text-primary">
               Beyond Programming
             </h3>
           </motion.div>

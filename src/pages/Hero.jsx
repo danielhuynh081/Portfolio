@@ -17,7 +17,7 @@ const Hero = () => {
           <span className="text-accent font-semibold tracking-widest uppercase text-xs md:text-sm mb-4 block">
             Based in Vancouver, Washington
           </span>
-          <h1 className="text-5xl md:text-7xl font-bold text-primary mb-8 tracking-tighter leading-tight">
+          <h1 className="text-[clamp(2.5rem,4vw+1.5rem,4.5rem)] font-bold text-primary mb-8 tracking-tighter leading-tight">
             Backend Developer <br className="hidden md:block" />
             <span className="text-slate-400"> & Software Engineer.</span>
           </h1>

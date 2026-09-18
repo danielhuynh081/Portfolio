@@ -128,7 +128,7 @@ const Projects = () => {
               Projects
             </h2>
 
-            <h3 className="text-3xl md:text-4xl font-bold text-primary tracking-tight">
+            <h3 className="text-[clamp(1.75rem,1.5vw+1.25rem,2.25rem)] font-bold text-primary tracking-tight">
               A collection of my personal and PSU projects
             </h3>
           </motion.div>
@@ -142,7 +142,7 @@ const Projects = () => {
           viewport={{ once: true }}
           className="mb-24"
         >
-          <h3 className="text-3xl font-bold text-primary mb-2">
+          <h3 className="text-[clamp(1.5rem,1vw+1.15rem,1.875rem)] font-bold text-primary mb-2">
             Full-Stack Applications
           </h3>
 
@@ -166,7 +166,7 @@ const Projects = () => {
           viewport={{ once: true }}
           className="mb-24"
         >
-          <h3 className="text-3xl font-bold text-primary mb-2">
+          <h3 className="text-[clamp(1.5rem,1vw+1.15rem,1.875rem)] font-bold text-primary mb-2">
             Systems Programming
           </h3>
 
@@ -189,7 +189,7 @@ const Projects = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
           viewport={{ once: true }}
         >
-          <h3 className="text-3xl font-bold text-primary mb-2">
+          <h3 className="text-[clamp(1.5rem,1vw+1.15rem,1.875rem)] font-bold text-primary mb-2">
             Computer Science Fundamentals
           </h3>
 
@@ -212,7 +212,7 @@ const Projects = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
           viewport={{ once: true }}
         >
-          <h3 className="text-3xl mt-20 font-bold text-primary mb-2">
+          <h3 className="text-[clamp(1.5rem,1vw+1.15rem,1.875rem)] mt-20 font-bold text-primary mb-2">
             In Progress
           </h3>
 

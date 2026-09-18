@@ -45,7 +45,7 @@ const Contact = () => {
             <h2 className="text-xs md:text-sm font-bold uppercase tracking-widest text-accent mb-4">
               Contact
             </h2>
-            <h3 className="text-4xl md:text-5xl font-bold text-primary tracking-tight leading-tight">
+            <h3 className="text-[clamp(2rem,3vw+1.25rem,3rem)] font-bold text-primary tracking-tight leading-tight">
               Let's make something <br className="hidden md:block" />
               great together.
             </h3>
