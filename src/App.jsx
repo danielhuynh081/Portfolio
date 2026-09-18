@@ -5,6 +5,7 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Footer from "./pages/Footer";
 import { useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 const App = () => {
   useEffect(() => {
@@ -21,6 +22,7 @@ const App = () => {
         <Contact />
       </main>
       <Footer />
+      <Analytics />
     </div>
   );
 };

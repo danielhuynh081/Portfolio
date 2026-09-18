@@ -108,7 +108,7 @@ const Projects = () => {
       title: "LSM Key Value Storage",
       description:
         "a project that stores keyvalues using an LSM developed in C++",
-      tags: ["C++"],
+      tags: ["C++", "SSTables", "LSM", "Bloomfilters"],
       image: "https://placehold.co/800x500?text=Coming+Soon",
     },
   ];
