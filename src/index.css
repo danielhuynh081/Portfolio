@@ -19,6 +19,7 @@ body {
   --color-surface: #f8fafc;
   --color-border: #e2e8f0;
   --color-text-muted: #64748b;
+  --breakpoint-3xl: 1920px;
 }
 
 :root {

@@ -13,7 +13,7 @@ const Hero = () => {
         viewport={{ once: true }}
         className="container mx-auto px-6"
       >
-        <div className="max-w-4xl text-center md:text-left">
+        <div className="max-w-4xl lg:max-w-5xl xl:max-w-6xl text-center md:text-left">
           <span className="text-accent font-semibold tracking-widest uppercase text-xs md:text-sm mb-4 block">
             Based in Vancouver, Washington
           </span>
