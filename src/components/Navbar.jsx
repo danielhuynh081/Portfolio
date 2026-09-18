@@ -9,6 +9,7 @@ const Navbar = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -20,20 +21,32 @@ const Navbar = () => {
     { name: "Contact", href: "#contact" },
   ];
 
+  const compact = isScrolled || isOpen;
+
   return (
     <motion.nav
-      initial={{ y: -20, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      className={`fixed top-0 w-full z-50 transition-all duration-300 border-b ${
-        isScrolled || isOpen
-          ? "bg-white/95 backdrop-blur-md py-4 border-border"
-          : "bg-transparent py-6 border-transparent"
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className={`fixed top-0 w-full z-50 border-b ${
+        compact
+          ? "bg-white/95 backdrop-blur-md border-border"
+          : "bg-transparent border-transparent"
       }`}
     >
-      <div className="container mx-auto px-6 flex justify-between items-center">
+      <motion.div
+        animate={{
+          paddingTop: compact ? "1rem" : "1.5rem",
+          paddingBottom: compact ? "1rem" : "1.5rem",
+        }}
+        transition={{
+          duration: 0.45,
+          ease: [0.16, 1, 0.3, 1],
+        }}
+        className="container mx-auto px-6 flex justify-between items-center"
+      >
         <div className="text-xl font-bold tracking-tighter">
           <a href="#home" className="text-accent">
-            {" "}
             Daniel Huynh
           </a>
         </div>
@@ -55,8 +68,11 @@ const Navbar = () => {
         <button
           className="md:hidden text-primary focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle navigation menu"
         >
-          <svg
+          <motion.svg
+            animate={{ rotate: isOpen ? 90 : 0 }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
             className="w-6 h-6"
             fill="none"
             stroke="currentColor"
@@ -77,9 +93,9 @@ const Navbar = () => {
                 d="M4 6h16M4 12h16m-7 6h7"
               />
             )}
-          </svg>
+          </motion.svg>
         </button>
-      </div>
+      </motion.div>
 
       {/* Mobile Menu Overlay */}
       <AnimatePresence>
@@ -88,18 +104,29 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-b border-border"
+            transition={{
+              duration: 0.4,
+              ease: [0.16, 1, 0.3, 1],
+            }}
+            className="md:hidden bg-white border-b border-border overflow-hidden"
           >
             <div className="flex flex-col px-6 py-8 space-y-6">
-              {navLinks.map((link) => (
-                <a
+              {navLinks.map((link, index) => (
+                <motion.a
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
+                  initial={{ opacity: 0, y: -8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    delay: index * 0.04,
+                    duration: 0.3,
+                    ease: "easeOut",
+                  }}
                   className="text-lg font-medium text-text-muted hover:text-primary transition-colors uppercase tracking-widest"
                 >
                   {link.name}
-                </a>
+                </motion.a>
               ))}
             </div>
           </motion.div>
