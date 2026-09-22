@@ -13,11 +13,11 @@ const Hero = () => {
         viewport={{ once: true }}
         className="container mx-auto px-6"
       >
-        <div className="max-w-4xl lg:max-w-5xl xl:max-w-6xl text-center md:text-left">
+        <div className="max-w-4xl lg:max-w-5xl xl:max-w-7xl text-center md:text-left">
           <span className="text-accent font-semibold tracking-widest uppercase text-xs md:text-sm mb-4 block">
             Based in Vancouver, Washington
           </span>
-          <h1 className="text-[clamp(2.5rem,4vw+1.5rem,4.5rem)] font-bold text-primary mb-8 tracking-tighter leading-tight">
+          <h1 className="text-[clamp(2.5rem,3vw+2rem,6rem)] font-bold text-primary mb-8 tracking-tighter leading-tight">
             Backend Developer <br className="hidden md:block" />
             <span className="text-slate-400"> & Software Engineer.</span>
           </h1>

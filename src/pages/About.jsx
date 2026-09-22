@@ -7,6 +7,7 @@ import patioFinished from "../images/patio/patio-finished.jpg";
 import mountain from "../images/waterfall/mountain.jpg";
 import waterfall from "../images/waterfall/waterfall.jpg";
 
+/*
 const patioImages = [
   {
     src: mountain,
@@ -151,7 +152,7 @@ const ImageSlider = () => {
     </div>
   );
 };
-
+*/
 const experience = [
   {
     role: "Desktop Support Technician",
@@ -205,8 +206,8 @@ const About = () => {
     "TypeScript",
     "Tailwind CSS",
     "Python",
-    "C",
     "C++",
+    "Bash",
     "GCP",
     "AWS",
     "Docker",
