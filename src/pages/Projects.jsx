@@ -75,10 +75,12 @@ const Projects = () => {
     {
       title: "BST Cave Game",
       description:
-        "A Python text-based adventure game where players traverse a Binary Search Tree, with branching paths and multiple endings determined by the choices they make.",
+        "A Pokemon style game built with python where players traverse a Red-Black Tree, with a story line and multiple endings determined by the choices they make.",
       tags: [
         "Python",
         "Data Structures",
+        "Red-Black Tree",
+        "BST",
         "Algorithms",
         "Object-Oriented Programming",
       ],
@@ -88,11 +90,11 @@ const Projects = () => {
     {
       title: "Pet Management System",
       description:
-        "A C++ application for managing different types of pets using object-oriented programming and generic data structures. Implemented templated doubly linked lists, inheritance, operator overloading, and polymorphism to organize and manage pet collections.",
+        "A C++ application for managing different types of pets using object-oriented programming and data structures. Implemented templated doubly linked lists, inheritance, operator overloading, and polymorphism to organize and manage pet collections.",
       tags: [
         "C++",
-        "Templates",
-        "Doubly Linked List",
+        "Polymorphism",
+        "Data Structures",
         "OOP",
         "Operator Overloading",
       ],
@@ -109,6 +111,13 @@ const Projects = () => {
       description:
         "a project that stores keyvalues using an LSM developed in C++",
       tags: ["C++", "SSTables", "LSM", "Bloomfilters"],
+      image: "https://placehold.co/800x500?text=Coming+Soon",
+    },
+    {
+      title: "BudgetMe",
+      description:
+        "A GoLang application that helps users manage their finances by tracking income, expenses, and budgets. Users can upload bank statemnets and have the application categorize their transactions and provide insights into their spending habits.",
+      tags: ["GoLang"],
       image: "https://placehold.co/800x500?text=Coming+Soon",
     },
   ];
