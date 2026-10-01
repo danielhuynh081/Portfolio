@@ -259,7 +259,7 @@ const About = () => {
               Such as cloud computing, CI/CD, and backend architecture.
               I&apos;ve also been expanding my portfolio, studying for the AWS
               Cloud Practitioner certification, and sharpening my C++ skills by
-              creatng more complex projects.
+              creating more complex projects.
             </p>
 
             <div className="border-t border-border py-12">
