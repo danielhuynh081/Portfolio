@@ -119,11 +119,14 @@ const Projects = () => {
         "A GoLang application that helps users manage their finances by tracking income, expenses, and budgets. Users can upload bank statements and have the application categorize their transactions and provide insights into their spending habits.",
       tags: ["GoLang"],
       image: "https://placehold.co/800x500?text=Coming+Soon",
-    },{
+    },
+    {
       title: "SwitchOps Request Validation",
-      description: "Create form validaiton for switchops website that pings ip addresses to ensure it's currently not being used before submitting a request",
-        tags: ["NextJS, Redis, "],
+      description:
+        "Create form validaiton for switchops website that pings ip addresses to ensure it's currently not being used before submitting a request",
+      tags: ["NextJS, Redis, "],
       image: "https://placehold.co/800x500?text=Coming+Soon",
+    },
   ];
 
   return (
