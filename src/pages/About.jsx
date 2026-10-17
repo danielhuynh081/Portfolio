@@ -161,7 +161,11 @@ const experience = [
     dates: "Sep 2026 - Present",
     location: "Camas, WA · On-site",
     points: [
-      "Provide desktop and hardware support for on-site staff, resolving technical issues across systems and equipment.",
+      "Automated legacy network data migrations using windows batch scripting, identifying outdated export paths,  updating export paths, and transferring files to new network shares using robocopy to reduce manual migration effort.",
+      "Enhanced an existing React-based IT monitoring dashboard displaying real-time service availability and tool status across multiple sites, implementing database migrations using Knex.js.",
+      "Developed IP address and VLAN request validation in a Next.js application using TypeScript, Pingman, and phpIPAM to prevent duplicate IP assignments and verify subnet availability and switch compatibility based on configured VLANS",
+      "Diagnosed and resolved hardware, software, and authentication issues using Active Directory and a ticketing system, supporting enterprise IT operations.",
+      "Configured and deployed laptops and manufacturing kiosks, including system imaging, network port patching, and VLAN configuration to support secure network connectivity.",
     ],
   },
   {
@@ -171,9 +175,9 @@ const experience = [
     dates: "Jun 2025 - Oct 2025",
     location: "Toronto, ON, Canada",
     points: [
-      "Developed FastAPI endpoints, webhooks, and Supabase database integrations to support production application functionality.",
-      "Collaborated in Agile sprints, daily stand-ups, code reviews, and retrospectives with cross-functional teams.",
-      "Implemented backend and AI-powered functionality using Python, JavaScript, and LLM APIs.",
+      "Developed RESTful APIs using FastAPI to support CRUD operations for user accounts, forums, and application resources.",
+      "Integrated Google's Gemini API to implement AI-powered discussion summarization and content moderation, streamlining forum management workflows.",
+      "Implemented API rate limiting and caching mechanisms to improve backend efficiency and reduce redundant requests.",
     ],
   },
   {
@@ -317,11 +321,11 @@ const About = () => {
 
                   <p className="mt-1 text-sm text-slate-400">{job.location}</p>
 
-                  <ul className="mt-4 space-y-2">
+                  <ul className="mt-4 space-y-2 text-sm">
                     {job.points.map((point) => (
                       <li
                         key={point}
-                        className="flex text-sm md:text-base leading-relaxed text-slate-600"
+                        className="flex text-sm md:sm leading-relaxed text-slate-600"
                       >
                         <span className="mr-3 mt-2 h-1.5 w-1.5 shrink-0 bg-accent" />
                         {point}

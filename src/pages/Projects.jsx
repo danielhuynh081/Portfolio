@@ -116,7 +116,7 @@ const Projects = () => {
     {
       title: "BudgetMe",
       description:
-        "A GoLang application that helps users manage their finances by tracking income, expenses, and budgets. Users can upload bank statemnets and have the application categorize their transactions and provide insights into their spending habits.",
+        "A GoLang application that helps users manage their finances by tracking income, expenses, and budgets. Users can upload bank statements and have the application categorize their transactions and provide insights into their spending habits.",
       tags: ["GoLang"],
       image: "https://placehold.co/800x500?text=Coming+Soon",
     },
