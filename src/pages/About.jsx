@@ -165,7 +165,7 @@ const experience = [
       "Enhanced an existing React-based IT monitoring dashboard displaying real-time service availability and tool status across multiple sites, implementing database migrations using Knex.js.",
       "Developed IP address and VLAN request validation in a Next.js application using TypeScript, Pingman, and phpIPAM to prevent duplicate IP assignments and verify subnet availability and switch compatibility based on configured VLANS",
       "Diagnosed and resolved hardware, software, and authentication issues using Active Directory and a ticketing system, supporting enterprise IT operations.",
-      "Configured and deployed laptops and manufacturing kiosks, including system imaging, network port patching, and VLAN configuration to support secure network connectivity.",
+      "Collaborated with cross functional teams to meet project deadlines and install new tools for the FAB in a timely manner.",
     ],
   },
   {
