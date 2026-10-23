@@ -9,6 +9,7 @@ import pet from "../images/projects/pet.jpg";
 import unix from "../images/projects/unix.jpg";
 import aws from "../images/projects/amazon-web-services.jpg";
 import CleanupPro from "../images/projects/CleanupPro.jpg";
+import CICD from "../images/projects/CICD.png";
 
 const Projects = () => {
   const fullStackProjects = [
@@ -26,6 +27,13 @@ const Projects = () => {
       tags: ["React", "Django", "Docker", "PostgreSQL"],
       image: macsystem,
       github: "https://github.com/danielhuynh081/Meseeh-Access-Control-Project",
+    },
+    {
+      title: "Infrastructure Dashboard CI/CD Pipeline",
+      description:
+        "Implemented a automated CI/CD Pipline for Analog Devices with Github Actions, Cloudsmith, and ArgoCD while maintaining security standards. reducing the need of manual deployment to save resources and prevent human errors.",
+      tags: ["CI/CD", "ArgocD", "CloudSmith", "Github Actions"],
+      image: CICD,
     },
   ];
 

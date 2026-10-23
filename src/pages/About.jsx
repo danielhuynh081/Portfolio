@@ -221,6 +221,9 @@ const About = () => {
     "PostgreSQL",
     "MongoDB",
     "Redis",
+    "CI/CD",
+    "Kubernetes",
+    "CloudSmith",
   ];
 
   return (
